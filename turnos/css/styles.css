@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+#sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    margin: 10px 0;
+}
+
+#sidebar ul li a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding: 5px;
+}
+
+#sidebar ul li ul.dropdown {
+    margin-top: 10px;
+}
+
+#sidebar ul li ul.dropdown.hidden {
+    display: none;
+}
+
+#sidebar ul li ul.dropdown li {
+    margin-left: 20px;
+}
+
+#content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+#caja-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#caja-table th, #caja-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,83 @@
+html, body {  
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to bottom, rgb(91, 94, 83), rgb(201, 129, 129));
+    opacity: 0.7;
+    
+}
+h2{
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.formulario-container {
+    max-width: 600px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 20px; /* Espaciado interno */
+    background-color: #be9a79; /* Color de fondo con transparencia */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 10px 10px 15px rgba(0, 0, 0.5); /* Sombra */ 
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    width: 48%; /* Ajusta el ancho de los campos */
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    font-family: Roboto;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #b38471;
+    box-sizing: border-box;
+    opacity: 1;
+    margin-top: 10px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #0c181c;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #fef6cd;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #6e4c3e;
+}
+
+/* Media Query para dispositivos con pantalla de menos de 600px de ancho */
+@media screen and (max-width: 600px) {
+    .form-group {
+        width: 100%; /* Ajusta el ancho de los campos para pantallas pequeñas */
+    }
+}
